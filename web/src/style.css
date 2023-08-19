@@ -1,0 +1,74 @@
+:root {
+  --color-scheme: none !important;
+}
+
+
+/* Pink Dark scheme (Auto) */
+/* Automatically enabled if user has Dark mode enabled */
+@media only screen and (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --background-color: transparent !important;
+    color-scheme: none !important;
+  }
+}
+
+[data-theme="dark"] {
+  --background-color: transparent !important;
+  color-scheme: none !important;
+}
+
+
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background: transparent !important;
+  font-size: 0.9rem;
+}
+
+.panel::-webkit-scrollbar {
+  width: 0.3em;
+}
+
+.panel::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.panel::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+main {
+  width: 45rem;
+  background: var(--card-background-color);
+  padding: 2.5rem;
+  height: 33rem;
+  border-radius: 0.2rem;
+}
+
+.panel {
+  max-height: 18rem;
+  overflow-y: auto;
+  padding: 1rem;
+}
+
+button {
+  font-size: 0.7rem;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+}
