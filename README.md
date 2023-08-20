@@ -1,5 +1,5 @@
 # um-all-commands
-A simple tool to manage all commands
+A simple tool to manage all commands | usage: ``/allcommands``
 
 <img src="https://cdn.discordapp.com/attachments/1131278508413427732/1142604154552991836/image.png">
 
